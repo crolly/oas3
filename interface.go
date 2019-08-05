@@ -1,4 +1,4 @@
-package openapi
+package oas3
 
 // InType represents where the parameter or the securityScheme is in.
 type InType string

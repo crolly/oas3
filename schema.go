@@ -1,6 +1,4 @@
-package openapi
-
-// codebeat:disable[TOO_MANY_IVARS]
+package oas3
 
 // Schema Object
 type Schema struct {

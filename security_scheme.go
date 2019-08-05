@@ -1,6 +1,4 @@
-package openapi
-
-// codebeat:disable[TOO_MANY_IVARS]
+package oas3
 
 // SecurityScheme Object
 type SecurityScheme struct {

@@ -1,11 +1,9 @@
-package openapi
+package oas3
 
 import (
 	"strconv"
 	"strings"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // Document represents a OpenAPI Specification document.
 type Document struct {

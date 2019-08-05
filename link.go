@@ -1,8 +1,6 @@
-package openapi
+package oas3
 
 import "errors"
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // Link Object
 type Link struct {

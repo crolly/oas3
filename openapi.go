@@ -1,4 +1,4 @@
-package openapi
+package oas3
 
 import (
 	"bytes"

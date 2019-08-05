@@ -1,10 +1,8 @@
-package openapi
+package oas3
 
 import (
 	"encoding/json"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // SecurityRequirement Object
 type SecurityRequirement struct {

@@ -1,10 +1,8 @@
-package openapi
+package oas3
 
 import (
 	"strings"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // Callback Object
 type Callback map[string]*PathItem

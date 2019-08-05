@@ -1,11 +1,11 @@
-package openapi_test
+package oas3_test
 
 import (
 	"reflect"
 	"strconv"
 	"testing"
 
-	openapi "github.com/nasa9084/go-openapi"
+	openapi "github.com/crolly/oas3"
 	yaml "gopkg.in/yaml.v2"
 )
 

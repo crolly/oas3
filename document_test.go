@@ -1,10 +1,10 @@
-package openapi_test
+package oas3_test
 
 import (
 	"strconv"
 	"testing"
 
-	openapi "github.com/nasa9084/go-openapi"
+	openapi "github.com/crolly/oas3"
 )
 
 func TestDocument_Validate(t *testing.T) {

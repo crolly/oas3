@@ -1,10 +1,8 @@
-package openapi
+package oas3
 
 import (
 	"strconv"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // Responses Object
 type Responses map[string]*Response

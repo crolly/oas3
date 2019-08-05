@@ -1,10 +1,10 @@
-package openapi_test
+package oas3_test
 
 import (
 	"reflect"
 	"testing"
 
-	openapi "github.com/nasa9084/go-openapi"
+	openapi "github.com/crolly/oas3"
 )
 
 func TestResolveSchema(t *testing.T) {

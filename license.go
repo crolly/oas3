@@ -1,10 +1,8 @@
-package openapi
+package oas3
 
 import (
 	"net/url"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // License Object
 type License struct {

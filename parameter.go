@@ -1,6 +1,4 @@
-package openapi
-
-// codebeat:disable[TOO_MANY_IVARS]
+package oas3
 
 // Parameter Object
 type Parameter struct {

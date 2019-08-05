@@ -1,11 +1,11 @@
-package openapi_test
+package oas3_test
 
 import (
 	"os"
 	"reflect"
 	"testing"
 
-	openapi "github.com/nasa9084/go-openapi"
+	openapi "github.com/crolly/oas3"
 )
 
 func TestMain(m *testing.M) {

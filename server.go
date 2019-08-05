@@ -1,11 +1,9 @@
-package openapi
+package oas3
 
 import (
 	"net/url"
 	"regexp"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 var tmplVarRegexp = regexp.MustCompile("{[^}]+}")
 

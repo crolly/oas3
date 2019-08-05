@@ -1,12 +1,10 @@
-package openapi
+package oas3
 
 import (
 	"net/url"
 
 	"github.com/nasa9084/go-openapi/oauth"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // OAuthFlow Object
 type OAuthFlow struct {

@@ -1,10 +1,8 @@
-package openapi
+package oas3
 
 import (
 	"strings"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // Paths Object
 type Paths map[string]*PathItem

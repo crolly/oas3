@@ -1,6 +1,4 @@
-package openapi
-
-// codebeat:disable[TOO_MANY_IVARS]
+package oas3
 
 // XML Object
 type XML struct {

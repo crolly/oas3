@@ -1,11 +1,9 @@
-package openapi
+package oas3
 
 import (
 	"net/http"
 	"strings"
 )
-
-// codebeat:disable[TOO_MANY_IVARS]
 
 // PathItem Object
 type PathItem struct {

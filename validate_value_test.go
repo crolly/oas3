@@ -1,4 +1,4 @@
-package openapi_test
+package oas3_test
 
 import (
 	"errors"
@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"testing"
 
-	openapi "github.com/nasa9084/go-openapi"
+	openapi "github.com/crolly/oas3"
 )
 
 const (

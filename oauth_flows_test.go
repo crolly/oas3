@@ -1,9 +1,9 @@
-package openapi_test
+package oas3_test
 
 import (
 	"testing"
 
-	openapi "github.com/nasa9084/go-openapi"
+	openapi "github.com/crolly/oas3"
 )
 
 func TestOAuthFlows_Validate(t *testing.T) {
