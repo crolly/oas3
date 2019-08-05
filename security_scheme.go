@@ -2,16 +2,16 @@ package oas3
 
 // SecurityScheme Object
 type SecurityScheme struct {
-	Type             SecuritySchemeType
-	Description      string
-	Name             string
-	In               InType
-	Scheme           string
-	BearerFormat     string `yaml:"bearerFormat"`
-	Flows            *OAuthFlows
-	OpenIDConnectURL string `yaml:"openIdConnectUrl"`
+	Type             SecuritySchemeType `yaml:",omitempty"`
+	Description      string             `yaml:",omitempty"`
+	Name             string             `yaml:",omitempty"`
+	In               InType             `yaml:",omitempty"`
+	Scheme           string             `yaml:",omitempty"`
+	BearerFormat     string             `yaml:"bearerFormat,omitempty"`
+	Flows            *OAuthFlows        `yaml:",omitempty"`
+	OpenIDConnectURL string             `yaml:"openIdConnectUrl,omitempty"`
 
-	Ref string `yaml:"$ref"`
+	Ref string `yaml:"$ref,omitempty"`
 }
 
 // SecuritySchemeType represents a securityScheme.type value.

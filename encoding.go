@@ -2,11 +2,11 @@ package oas3
 
 // Encoding Object
 type Encoding struct {
-	ContentType   string `yaml:"contentType"`
-	Headers       map[string]*Header
-	Style         string
-	Explode       bool
-	AllowReserved bool `yaml:"allowReserved"`
+	ContentType   string             `yaml:"contentType,omitempty"`
+	Headers       map[string]*Header `yaml:",omitempty"`
+	Style         string             `yaml:",omitempty"`
+	Explode       bool               `yaml:",omitempty"`
+	AllowReserved bool               `yaml:"allowReserved,omitempty"`
 }
 
 // Validate the values of Encoding object.

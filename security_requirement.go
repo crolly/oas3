@@ -6,8 +6,8 @@ import (
 
 // SecurityRequirement Object
 type SecurityRequirement struct {
-	document *Document
-	mp       map[string][]string
+	document *Document           `yaml:",omitempty"`
+	mp       map[string][]string `yaml:",omitempty"`
 }
 
 // UnmarshalJSON implements json.Unmarshaler.

@@ -7,14 +7,14 @@ import (
 
 // Document represents a OpenAPI Specification document.
 type Document struct {
-	Version      string `yaml:"openapi"`
-	Info         *Info
-	Servers      []*Server
-	Paths        Paths
-	Components   *Components
-	Security     []*SecurityRequirement
-	Tags         []*Tag
-	ExternalDocs *ExternalDocumentation `yaml:"externalDocs"`
+	Version      string                 `yaml:"openapi,omitempty"`
+	Info         *Info                  `yaml:",omitempty"`
+	Servers      []*Server              `yaml:",omitempty"`
+	Paths        Paths                  `yaml:",omitempty"`
+	Components   *Components            `yaml:",omitempty"`
+	Security     []*SecurityRequirement `yaml:",omitempty"`
+	Tags         []*Tag                 `yaml:",omitempty"`
+	ExternalDocs *ExternalDocumentation `yaml:"externalDocs,omitempty"`
 }
 
 // Validate the values of spec.

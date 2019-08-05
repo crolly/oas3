@@ -7,20 +7,20 @@ import (
 
 // PathItem Object
 type PathItem struct {
-	Ref string `yaml:"$ref"`
+	Ref string `yaml:"$ref,omitempty"`
 
-	Summary     string
-	Description string
-	Get         *Operation
-	Put         *Operation
-	Post        *Operation
-	Delete      *Operation
-	Options     *Operation
-	Head        *Operation
-	Patch       *Operation
-	Trace       *Operation
-	Servers     []*Server
-	Parameters  []*Parameter
+	Summary     string       `yaml:",omitempty"`
+	Description string       `yaml:",omitempty"`
+	Get         *Operation   `yaml:",omitempty"`
+	Put         *Operation   `yaml:",omitempty"`
+	Post        *Operation   `yaml:",omitempty"`
+	Delete      *Operation   `yaml:",omitempty"`
+	Options     *Operation   `yaml:",omitempty"`
+	Head        *Operation   `yaml:",omitempty"`
+	Patch       *Operation   `yaml:",omitempty"`
+	Trace       *Operation   `yaml:",omitempty"`
+	Servers     []*Server    `yaml:",omitempty"`
+	Parameters  []*Parameter `yaml:",omitempty"`
 }
 
 var methods = []string{

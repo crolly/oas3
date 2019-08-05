@@ -2,8 +2,8 @@ package oas3
 
 // ExternalDocumentation Object
 type ExternalDocumentation struct {
-	Description string
-	URL         string
+	Description string `yaml:",omitempty"`
+	URL         string `yaml:",omitempty"`
 }
 
 // Validate the values of ExternalDocumentaion object.

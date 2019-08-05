@@ -6,8 +6,8 @@ import (
 
 // License Object
 type License struct {
-	Name string
-	URL  string
+	Name string `yaml:",omitempty"`
+	URL  string `yaml:",omitempty"`
 }
 
 // Validate the values of License object.

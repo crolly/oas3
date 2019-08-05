@@ -2,11 +2,11 @@ package oas3
 
 // XML Object
 type XML struct {
-	Name      string
-	Namespace string
-	Prefix    string
-	Attribute bool
-	Wrapped   bool
+	Name      string `yaml:",omitempty"`
+	Namespace string `yaml:",omitempty"`
+	Prefix    string `yaml:",omitempty"`
+	Attribute bool   `yaml:",omitempty"`
+	Wrapped   bool   `yaml:",omitempty"`
 }
 
 // Validate the values of XML object.

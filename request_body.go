@@ -2,11 +2,11 @@ package oas3
 
 // RequestBody Object
 type RequestBody struct {
-	Description string
-	Content     map[string]*MediaType
-	Required    bool
+	Description string                `yaml:",omitempty"`
+	Content     map[string]*MediaType `yaml:",omitempty"`
+	Required    bool                  `yaml:",omitempty"`
 
-	Ref string `yaml:"$ref"`
+	Ref string `yaml:"$ref,omitempty"`
 }
 
 // Validate the values of RequestBody object.

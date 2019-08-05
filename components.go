@@ -2,15 +2,15 @@ package oas3
 
 // Components Object
 type Components struct {
-	Schemas         map[string]*Schema
-	Responses       map[string]*Response
-	Parameters      map[string]*Parameter
-	Examples        map[string]*Example
-	RequestBodies   map[string]*RequestBody `yaml:"requestBodies"`
-	Headers         map[string]*Header
-	SecuritySchemes map[string]*SecurityScheme `yaml:"securitySchemes"`
-	Links           map[string]*Link
-	Callbacks       map[string]*Callback
+	Schemas         map[string]*Schema         `yaml:",omitempty"`
+	Responses       map[string]*Response       `yaml:",omitempty"`
+	Parameters      map[string]*Parameter      `yaml:",omitempty"`
+	Examples        map[string]*Example        `yaml:",omitempty"`
+	RequestBodies   map[string]*RequestBody    `yaml:"requestBodies,omitempty"`
+	Headers         map[string]*Header         `yaml:",omitempty"`
+	SecuritySchemes map[string]*SecurityScheme `yaml:"securitySchemes,omitempty"`
+	Links           map[string]*Link           `yaml:",omitempty"`
+	Callbacks       map[string]*Callback       `yaml:",omitempty"`
 }
 
 // Validate the values of Components object.

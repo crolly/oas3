@@ -2,10 +2,10 @@ package oas3
 
 // Example Object
 type Example struct {
-	Summary       string
-	Description   string
-	Value         interface{}
-	ExternalValue interface{} `yaml:"externalValue"`
+	Summary       string      `yaml:",omitempty"`
+	Description   string      `yaml:",omitempty"`
+	Value         interface{} `yaml:",omitempty"`
+	ExternalValue interface{} `yaml:"externalValue,omitempty"`
 
-	Ref string `yaml:"$ref"`
+	Ref string `yaml:"$ref,omitempty"`
 }

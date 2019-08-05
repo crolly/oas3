@@ -6,12 +6,12 @@ import (
 
 // Info Object
 type Info struct {
-	Title          string
-	Description    string
-	TermsOfService string `yaml:"termsOfService"`
-	Contact        *Contact
-	License        *License
-	Version        string
+	Title          string   `yaml:",omitempty"`
+	Description    string   `yaml:",omitempty"`
+	TermsOfService string   `yaml:"termsOfService,omitempty"`
+	Contact        *Contact `yaml:",omitempty"`
+	License        *License `yaml:",omitempty"`
+	Version        string   `yaml:",omitempty"`
 }
 
 // Validate the values of Info object.

@@ -2,8 +2,8 @@ package oas3
 
 // Discriminator Object
 type Discriminator struct {
-	PropertyName string `yaml:"propertyName"`
-	Mapping      map[string]string
+	PropertyName string            `yaml:"propertyName,omitempty"`
+	Mapping      map[string]string `yaml:",omitempty"`
 }
 
 // Validate the values of Descriminator object.

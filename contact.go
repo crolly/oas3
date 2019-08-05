@@ -2,9 +2,9 @@ package oas3
 
 // Contact Object
 type Contact struct {
-	Name  string
-	URL   string
-	Email string
+	Name  string `yaml:",omitempty"`
+	URL   string `yaml:",omitempty"`
+	Email string `yaml:",omitempty"`
 }
 
 // Validate the values of Contact object.

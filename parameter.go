@@ -2,23 +2,23 @@ package oas3
 
 // Parameter Object
 type Parameter struct {
-	Name            string
-	In              InType
-	Description     string
-	Required        bool
-	Deprecated      string
-	AllowEmptyValue bool `yaml:"allowEmptyValue"`
+	Name            string `yaml:",omitempty"`
+	In              InType `yaml:",omitempty"`
+	Description     string `yaml:",omitempty"`
+	Required        bool   `yaml:",omitempty"`
+	Deprecated      string `yaml:",omitempty"`
+	AllowEmptyValue bool   `yaml:"allowEmptyValue,omitempty"`
 
-	Style         string
-	Explode       bool
-	AllowReserved bool `yaml:"allowReserved"`
-	Schema        *Schema
-	Example       interface{}
-	Examples      map[string]*Example
+	Style         string              `yaml:",omitempty"`
+	Explode       bool                `yaml:",omitempty"`
+	AllowReserved bool                `yaml:"allowReserved,omitempty"`
+	Schema        *Schema             `yaml:",omitempty"`
+	Example       interface{}         `yaml:",omitempty"`
+	Examples      map[string]*Example `yaml:",omitempty"`
 
-	Content map[string]*MediaType
+	Content map[string]*MediaType `yaml:",omitempty"`
 
-	Ref string `yaml:"$ref"`
+	Ref string `yaml:"$ref,omitempty"`
 }
 
 // Validate the values of Parameter object.

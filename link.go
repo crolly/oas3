@@ -4,14 +4,14 @@ import "errors"
 
 // Link Object
 type Link struct {
-	OperationRef string `yaml:"operationRef"`
-	OperationID  string `yaml:"operationId"`
-	Parameters   map[string]interface{}
-	RequestBody  interface{} `yaml:"requestBody"`
-	Description  string
-	Server       *Server
+	OperationRef string                 `yaml:"operationRef,omitempty"`
+	OperationID  string                 `yaml:"operationId,omitempty"`
+	Parameters   map[string]interface{} `yaml:",omitempty"`
+	RequestBody  interface{}            `yaml:"requestBody,omitempty"`
+	Description  string                 `yaml:",omitempty"`
+	Server       *Server                `yaml:",omitempty"`
 
-	Ref string `yaml:"$ref"`
+	Ref string `yaml:"$ref,omitempty"`
 }
 
 // Validate the values of Link object.

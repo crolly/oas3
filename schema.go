@@ -2,44 +2,44 @@ package oas3
 
 // Schema Object
 type Schema struct {
-	Title            string
-	MultipleOf       int `yaml:"multipleOf"`
-	Maximum          int
-	ExclusiveMaximum bool `yaml:"exclusiveMaximum"`
-	Minimum          int
-	ExclusiveMinimum bool `yaml:"exclusiveMinimum"`
-	MaxLength        int  `yaml:"maxLength"`
-	MinLength        int  `yaml:"minLength"`
-	Pattern          string
-	MaxItems         int `yaml:"maxItems"`
-	MinItems         int `yaml:"minItems"`
-	MaxProperties    int `yaml:"maxProperties"`
-	MinProperties    int `yaml:"minProperties"`
-	Required         []string
-	Enum             []string
+	Title            string   `yaml:",omitempty"`
+	MultipleOf       int      `yaml:"multipleOf,omitempty"`
+	Maximum          int      `yaml:",omitempty"`
+	ExclusiveMaximum bool     `yaml:"exclusiveMaximum,omitempty"`
+	Minimum          int      `yaml:",omitempty"`
+	ExclusiveMinimum bool     `yaml:"exclusiveMinimum,omitempty"`
+	MaxLength        int      `yaml:"maxLength,omitempty"`
+	MinLength        int      `yaml:"minLength,omitempty"`
+	Pattern          string   `yaml:",omitempty"`
+	MaxItems         int      `yaml:"maxItems,omitempty"`
+	MinItems         int      `yaml:"minItems,omitempty"`
+	MaxProperties    int      `yaml:"maxProperties,omitempty"`
+	MinProperties    int      `yaml:"minProperties,omitempty"`
+	Required         []string `yaml:",omitempty"`
+	Enum             []string `yaml:",omitempty"`
 
-	Type                 string
-	AllOf                []*Schema `yaml:"allOf"`
-	OneOf                []*Schema `yaml:"oneOf"`
-	AnyOf                []*Schema `yaml:"anyOf"`
-	Not                  *Schema
-	Items                *Schema
-	Properties           map[string]*Schema
-	AdditionalProperties *Schema `yaml:"additionalProperties"`
-	Description          string
-	Format               string
-	Default              string
+	Type                 string             `yaml:",omitempty"`
+	AllOf                []*Schema          `yaml:"allOf,omitempty"`
+	OneOf                []*Schema          `yaml:"oneOf,omitempty"`
+	AnyOf                []*Schema          `yaml:"anyOf,omitempty"`
+	Not                  *Schema            `yaml:",omitempty"`
+	Items                *Schema            `yaml:",omitempty"`
+	Properties           map[string]*Schema `yaml:",omitempty"`
+	AdditionalProperties *Schema            `yaml:"additionalProperties,omitempty"`
+	Description          string             `yaml:",omitempty"`
+	Format               string             `yaml:",omitempty"`
+	Default              string             `yaml:",omitempty"`
 
-	Nullable      bool
-	Discriminator *Discriminator
-	ReadOnly      bool `yaml:"readOnly"`
-	WriteOnly     bool `yaml:"writeOnly"`
-	XML           *XML
-	ExternalDocs  *ExternalDocumentation `yaml:"externalDocs"`
-	Example       interface{}
-	Deprecated    bool
+	Nullable      bool                   `yaml:",omitempty"`
+	Discriminator *Discriminator         `yaml:",omitempty"`
+	ReadOnly      bool                   `yaml:"readOnly,omitempty"`
+	WriteOnly     bool                   `yaml:"writeOnly,omitempty"`
+	XML           *XML                   `yaml:",omitempty"`
+	ExternalDocs  *ExternalDocumentation `yaml:"externalDocs,omitempty"`
+	Example       interface{}            `yaml:",omitempty"`
+	Deprecated    bool                   `yaml:",omitempty"`
 
-	Ref string `yaml:"$ref"`
+	Ref string `yaml:"$ref,omitempty"`
 }
 
 // Validate the values of Schema object.

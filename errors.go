@@ -7,8 +7,8 @@ import (
 
 // ErrFormatInvalid is returned some error caused by string format is occurred.
 type ErrFormatInvalid struct {
-	Target string
-	Format string
+	Target string `yaml:",omitempty"`
+	Format string `yaml:",omitempty"`
 }
 
 func (fe ErrFormatInvalid) Error() string {

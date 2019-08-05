@@ -8,11 +8,11 @@ import (
 
 // OAuthFlow Object
 type OAuthFlow struct {
-	flowType         string
-	AuthorizationURL string `yaml:"authorizationUrl"`
-	TokenURL         string `yaml:"tokenUrl"`
-	RefreshURL       string `yaml:"refreshUrl"`
-	Scopes           map[string]string
+	flowType         string            `yaml:",omitempty"`
+	AuthorizationURL string            `yaml:"authorizationUrl,omitempty"`
+	TokenURL         string            `yaml:"tokenUrl,omitempty"`
+	RefreshURL       string            `yaml:"refreshUrl,omitempty"`
+	Scopes           map[string]string `yaml:",omitempty"`
 }
 
 var defined = struct{}{}

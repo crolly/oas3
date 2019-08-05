@@ -6,18 +6,18 @@ import (
 
 // Operation Object
 type Operation struct {
-	Tags         []string
-	Summary      string
-	Description  string
-	ExternalDocs *ExternalDocumentation `yaml:"externalDocs"`
-	OperationID  string                 `yaml:"operationId"`
-	Parameters   []*Parameter
-	RequestBody  *RequestBody `yaml:"requestBody"`
-	Responses    Responses
-	Callbacks    map[string]*Callback
-	Deprecated   bool
-	Security     []*SecurityRequirement
-	Servers      []*Server
+	Tags         []string               `yaml:",omitempty"`
+	Summary      string                 `yaml:",omitempty"`
+	Description  string                 `yaml:",omitempty"`
+	ExternalDocs *ExternalDocumentation `yaml:"externalDocs,omitempty"`
+	OperationID  string                 `yaml:"operationId,omitempty"`
+	Parameters   []*Parameter           `yaml:",omitempty"`
+	RequestBody  *RequestBody           `yaml:"requestBody,omitempty"`
+	Responses    Responses              `yaml:",omitempty"`
+	Callbacks    map[string]*Callback   `yaml:",omitempty"`
+	Deprecated   bool                   `yaml:",omitempty"`
+	Security     []*SecurityRequirement `yaml:",omitempty"`
+	Servers      []*Server              `yaml:",omitempty"`
 }
 
 // SuccessResponse returns a success response object.

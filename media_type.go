@@ -2,10 +2,10 @@ package oas3
 
 // MediaType Object
 type MediaType struct {
-	Schema   *Schema
-	Example  interface{}
-	Examples map[string]*Example
-	Encoding map[string]*Encoding
+	Schema   *Schema              `yaml:",omitempty"`
+	Example  interface{}          `yaml:",omitempty"`
+	Examples map[string]*Example  `yaml:",omitempty"`
+	Encoding map[string]*Encoding `yaml:",omitempty"`
 }
 
 // Validate the values of MediaType object.

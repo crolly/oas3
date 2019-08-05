@@ -4,10 +4,10 @@ import "github.com/nasa9084/go-openapi/oauth"
 
 // OAuthFlows Object
 type OAuthFlows struct {
-	Implicit          *OAuthFlow
-	Password          *OAuthFlow
-	ClientCredentials *OAuthFlow `yaml:"clientCredentials"`
-	AuthorizationCode *OAuthFlow `yaml:"authorizationCode"`
+	Implicit          *OAuthFlow `yaml:",omitempty"`
+	Password          *OAuthFlow `yaml:",omitempty"`
+	ClientCredentials *OAuthFlow `yaml:"clientCredentials,omitempty"`
+	AuthorizationCode *OAuthFlow `yaml:"authorizationCode,omitempty"`
 }
 
 // Validate the values of OAuthFlows Object.

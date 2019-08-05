@@ -9,9 +9,9 @@ var tmplVarRegexp = regexp.MustCompile("{[^}]+}")
 
 // Server Object
 type Server struct {
-	URL         string
-	Description string
-	Variables   map[string]*ServerVariable
+	URL         string                     `yaml:",omitempty"`
+	Description string                     `yaml:",omitempty"`
+	Variables   map[string]*ServerVariable `yaml:",omitempty"`
 }
 
 // Validate the values of Server object.

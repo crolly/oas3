@@ -2,9 +2,9 @@ package oas3
 
 // ServerVariable Object
 type ServerVariable struct {
-	Enum        []string
-	Default     string
-	Description string
+	Enum        []string `yaml:",omitempty"`
+	Default     string   `yaml:",omitempty"`
+	Description string   `yaml:",omitempty"`
 }
 
 // Validate the values of Server Variable object.
